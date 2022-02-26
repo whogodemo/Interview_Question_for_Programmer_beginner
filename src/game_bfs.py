@@ -8,7 +8,7 @@ for i in range(n+m):
     x, y = map(int, input().split())
     gamemap[x] = y #게임판. 사다리가 있으면 x번째 칸에서 y로 이동
     
-p = 1
+p = 1 #1에서 시작
 queue = deque([p])
 
 while p != 100:
@@ -17,9 +17,15 @@ while p != 100:
     p = queue.popleft()
 
     for j in range(1, 7):
-        if p+j <= 100:
-            if distance[gamemap[p+j]] == 0:
-                queue.append(gamemap[p+j])
-                distance[gamemap[p+j]] = distance[p] + 1
+        dice = p+j
+        
+        if dice <= 100:
+            move = gamemap[dice]
+            #dice의 이동위치 = move
+            
+            if distance[move] == 0:
+                #아직 move를 지나가지 않은 경우
+                queue.append(move)
+                distance[move] = distance[p] + 1
 
 print(distance[100])
