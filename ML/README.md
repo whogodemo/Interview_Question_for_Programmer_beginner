@@ -64,36 +64,35 @@
 
 ## CNN
 
-CNN 알고리즘을 간단히 설명하면?
+* 알고리즘을 간단히 설명하면?
 
-Back propagation 알고리즘
+* CNN과 기타 알고리즘의 차이(장단점)
 
-CNN과 기타 알고리즘의 차이
-
-CNN을 사용하여 프로젝트를 진행한 이유
+* CNN을 사용하여 프로젝트를 진행한 이유
 
 ## RNN/ LSTM
 
-간단히 설명하면?
+* 간단히 설명하면?
 
-RNN과 Lstm의 차이
+* RNN과 Lstm의 차이
 
 ## Recommendation Algorithm
 
-간단히 설명하면?
+* 간단히 설명하면?
 
-contense-based filtering
-
-collaborative filtering
+* contents-based filtering
+* collaborative filtering
 
 ## GAN 생성적 적대 신경망
 
-간단히 설명하면?
+* 간단히 설명하면?
 
-generator discriminator
+* generator
+* discriminator
 
 ## 자연어처리
 
+* 간단히 설명하면?
 
 
 ## etc
