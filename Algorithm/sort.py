@@ -9,6 +9,18 @@ for i in range(len(a)):
 
     a[index], a[i] = a[i], a[index]
 
+#삽입정렬
+def insert_sort(array):
+    for i in range(1, len(array)):
+        for j in range(i, 0, -1):
+
+            if array[j] < array[j-1]:
+                array[j], array[j-1] = array[j-1], array[j]
+            else:
+                break
+
+insert_sort(array)
+
 #버블정렬
 for i in range(len(a), 1, -1):
     for j in range(1, i):
