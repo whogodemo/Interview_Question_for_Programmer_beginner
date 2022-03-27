@@ -1,3 +1,171 @@
+# 문자열
+
+string = "Hello"
+
+# 대문자로 변환
+# HELLO
+string.upper()
+
+# 소문자로 변환
+# hello
+string.lower()
+
+
+
+
+string = "My favorite song is snowman by sia"
+
+# string.replace(문자열1, 문자열2)
+# 문자열1을 문자열2로 변환
+
+# My favorate song as snowman by saa
+string.replace("i", "a")
+
+# 삭제할 수도 있다
+# My favorite  is snowman by sia
+string.replace("song", "")
+
+# 공백 삭제
+# Myfavoritesongissnowmanbysia
+string.replace(" ", "")
+
+
+
+
+
+# find
+# 찾는 문자열이 처음 나오는 위치 리턴
+# 없을 경우 -1 리턴
+
+string = "My favorite song is snowman by sia"
+# 17
+string.find("is")
+
+# -1
+string.find("maroon")
+
+
+
+
+
+string = "My favorite song is snowman by sia"
+
+# 슬라이싱
+# 문자열에서 원하는 부분만 추출 할 수 있다.
+# string[start: end] start ~ (end - 1)까지 슬라이싱
+
+# 생략 할 경우 처음과 끝이 들어간다.
+# My favorite song is snowman by sia
+string[:]
+
+# 5번째 부터 끝까지
+# vorite song is snowman by sia
+string[5:]
+
+# 처음 부터 9번째 까지
+# My favorit
+string[:10]
+
+# My
+string[0:2]
+
+# 음수도 가능하다. 끝에서 부터 -1
+# My favorite song is snowman by s
+string[:-2]
+#끝에 두개 빼고
+
+# 세번째 인수를 생략하지 않은 경우 step으로 작용
+
+# 2개씩 step
+# M aoiesn ssomnb i
+string[::2]
+
+# Reverse
+# ais yb namwons si gnos etirovaf yM
+string[::-1]
+
+
+
+
+
+
+string = "       Hello World!       "
+
+# 공백 제거
+
+# strip() - 양쪽 공백제거
+# Hello World!
+string.strip()
+
+# lstrip() - 왼쪽 공백제거
+# Hello World!        
+string.lstrip()
+
+# rstrip() - 오른쪽 공백제거
+#        Hello World!        
+string.rstrip()
+
+
+
+
+
+
+string = "apple banana kiwi tomato"
+
+# 분리
+# split(문자열) 문자열을 기준으로 분리 
+# 생략할 경우 공백을 기준으로 분리함
+# 리턴되는 결과는 리스트
+
+# ['apple', 'banana', 'kiwi', 'tomato']
+string.split()
+
+
+li = ["apple", "banana", "kiwi", "tomato"]
+# 결합(리스트를 문자열로 결합)
+# 문자열.join(리스트) - 리스트 원소 사이에 문자열을 삽입
+
+# 공백을 삽입
+# apple banana kiwi tomato
+" ".join(li)
+
+li = [1, 2, 3, 4]
+####### 리스트의 원소는 모두 str 타입이어야 한다. 아닐경우 오류발생
+######## 오류발생!
+" ". join(li)
+
+
+
+
+
+#문자열 구성 확인
+ex1 = 'Abcd'
+ex2 = ' aB'
+
+print(ex1.isalpha())
+#True
+#대문자 소문자로만 이루어져있는지 확인
+
+print(ex2.isalpha())
+#False
+#공백 포함되면 안됨
+
+ex3 = '123456'
+print(ex3.isdigit())
+#True
+#숫자로만 구성
+
+ex4 = 'hello3'
+print(ex4.isalnum())
+#True
+#숫자와 문자열로만 구성되어있는지 확인. 한글도 가능
+
+ex5 = '안녕'
+print(ex5.isalnum())
+#True
+#########한글도 True
+
+
 
 # 배열
 
