@@ -1,4 +1,4 @@
-# Interview For Machine Learning beginner
+# Interview For Programmer beginner
 취업을 준비하기 위한 면접질문 정리
 
 
